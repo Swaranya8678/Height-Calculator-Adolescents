@@ -1,5 +1,7 @@
 # I created this code from the formula in my class 8 science textbook
 
+import acronym_slicer
+
 def ab_name():
     print(f"WELCOME {name1.capitalize()}{bg2.capitalize()}")
 
@@ -13,67 +15,34 @@ if hi == "2":
     print(f"Welcome {name.capitalize()}")
 # Code for finding abbreviation
 if hi == "1":
-    name1 = (name[0])
-    bg = (name.index(" "))
-    if bg == 1:
-        bg2 = (name[2])
-        ab_name()
-    if bg == 2:
-        bg2 = (name[3])
-        ab_name()
-    if bg == 3:
-        bg2 = (name[4])
-        ab_name()
-    if bg == 4:
-        bg2 = (name[5])
-        ab_name()
-    if bg == 5:
-        bg2 = (name[6])
-        ab_name()
-    if bg == 6:
-        bg2 = (name[7])
-        ab_name()
-    if bg == 7:
-        bg2 = (name[8])
-        ab_name()
-    if bg == 8:
-        bg2 = (name[9])
-        ab_name()
-    if bg == 9:
-        bg2 = (name[10])
-        ab_name()
-    if bg == 10:
-        bg2 = (name[11])
-        ab_name()
-    if bg == 11:
-        bg2 = (name[12])
-        ab_name()
-    if bg == 12:
-        bg2 = (name[13])
-        ab_name()
+    acronym_slicer.
 
 # Input for gender
+
 gender = input("Please Enter Your Gender(male/female): \n")
 # Input for age
 age = input("Please Enter Your Age(8-18): \n")
 # Input for height and giving two choices
 print("Will you enter your height in feet or cm?")
-ask = input("For centimeters type (cm), for feet type (ft): \n")
-if ask == "cm":
-    height = (input("Please Enter Your Height in cm: \n"))
-if ask == "ft":
-    height = (input("Enter your height in feet without a decimal point or space: \n"))
-    a = int(height[0])
-    b = int(height[1:3])
-    height_in_ft = (a*12)+b
-    height = int(height_in_ft)*2.54
-    print("Your height in cm is: " + str(height))
+try:
+    ask = input("For centimeters type (cm), for feet type (ft): \n")
+    if ask == "cm":
+        height = (input("Please Enter Your Height in cm: \n"))
+    if ask == "ft":
+        height = (input("Enter your height in feet without a decimal point or space: \n"))
+        a = int(height[0])
+        b = int(height[1:3])
+        height_in_ft = (a*12)+b
+        height = int(height_in_ft)*2.54
+        print("Your height in cm is: " + str(height))
+except:
+    print("Wrong Input")
 
 # Conforming all the above data
 if hi == "2":
     print(f"{name.capitalize()} Your gender is: {gender} ,your age is {age} and your height is {height}cm")
 if hi == "1":
-    print(f"{name1.capitalize()}{bg2.capitalize()} Your gender is: {gender} ,your age is {age} and your height is {str(height)}")
+    print(f"{name1.capitalize()}{bg2.capitalize()} Your gender is: {gender} ,your age is {age} and your height is {height}cm")
 print("Are all the above information correct?")
 answer = input("yes/no: \n")
 if answer == "yes":
