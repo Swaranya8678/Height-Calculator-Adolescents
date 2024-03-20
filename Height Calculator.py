@@ -10,11 +10,11 @@ print("Hello")
 name = input("Please Enter Your Full Name: \n")
 # Giving two choices
 print("Do you want us to call us your full name or you acronym?")
-hi = input("For displaying acronym type 1, For displaying full name type 2: \n")
-if hi == "2":
+acronym = input("For displaying acronym type 1, For displaying full name type 2: \n")
+if acronym == "2":
     print(f"Welcome {name.capitalize()}")
 # Code for finding abbreviation
-if hi == "1":
+if acronym == "1":
     acronym_slicer.
 
 # Input for gender
@@ -96,7 +96,7 @@ if age == "17" and gender == "female":
 if age == "18" and gender == "female":
     print("Your height at the end of your growth period will be " + str(int(height) / 100 * 100) + "cm")
 # Printing thank you
-if hi == "2":
+if acronym == "2":
     print("Thank you " + name + " for coming to this website")
-if hi == "1":
+if acronym == "1":
     print(f"Thank you {name1.capitalize()}{bg2.capitalize()} for coming to this website")
